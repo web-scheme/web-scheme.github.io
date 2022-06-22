@@ -1,0 +1,3 @@
+#!sweet  ; https://srfi.schemers.org/srfi-110/srfi-110.html
+
+define sick-example()

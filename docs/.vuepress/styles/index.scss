@@ -1,0 +1,38 @@
+// Use the same color as the logo for the primary.
+$primary: #739366;
+
+:root, html.dark {
+  --c-brand: #{$primary};
+  --c-brand-light: #{scale-color($primary, $lightness: 15%)};  // on hover
+
+  // Use a wider width for non-homepage content (default: 740px).
+  --content-width: 860px;
+}
+
+:root {
+  // Use a slightly yellower background.
+  $off-white: #f5f0eb;
+  --c-bg: #{$off-white};
+  --c-bg-light: #{scale-color($off-white, $lightness: -4%)};
+  --c-bg-lighter: #{scale-color($off-white, $lightness: -6%)};
+
+  // Make hyperlinks / code stand out more.
+  --c-text-accent: #{scale-color($primary, $lightness: -15%, $saturation: 25%)};
+  --c-text-lighter: #{scale-color(#4e6e8e, $lightness: -2%)};
+}
+
+html.dark {
+  // Use an even darker background in dark mode.
+  $off-black: #080908;
+  --c-bg: #{$off-black};
+  --c-bg-light: #{scale-color($off-black, $lightness: 4%)};
+  --c-bg-lighter: #{scale-color($off-black, $lightness: 8%)};
+
+  // Also use a darker background for code blocks.
+  --code-bg-color: #141414;
+  --code-hl-bg-color: #{change-color($primary, $alpha: 0.33)};
+
+  // Make warning blocks less harsh by adjusting their dark-mode default colors.
+  --c-warning-bg: #{scale-color(#7e755b, $lightness: -9%)};
+  --c-warning-text: #{scale-color(#362e00, $lightness: -30%)};
+}
