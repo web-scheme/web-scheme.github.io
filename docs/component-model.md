@@ -42,7 +42,8 @@ Rough idea:
 (: x s32)
 
 ;; Wasm's convenient choice to use S-expressions for the text representation
-;; means we can use its type notations verbatim! :D
+;; means we can use its own type notations verbatim
+;; and even apply Scheme macros to them to define new typing syntax.
 (define (foo x y)
   (+ x y))
 (: foo (func (param float64 s32) (result float64)))
