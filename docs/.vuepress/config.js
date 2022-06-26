@@ -6,7 +6,7 @@ module.exports = {
 
   theme: defaultTheme({
     logo: '/logo.svg',
-    repo: 'https://github.com/Web-Scheme/s-lang',
+    repo: 'https://github.com/web-scheme/s-lang',
     repoLabel: 'Git',
     docsDir: 'docs',
     contributors: false,
