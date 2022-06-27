@@ -7,7 +7,6 @@ module.exports = {
   theme: defaultTheme({
     logo: '/logo.svg',
     repo: 'https://github.com/web-scheme/s-lang',
-    repoLabel: 'Git',
     docsDir: 'docs',
     contributors: false,
     editLink: false,
@@ -24,6 +23,15 @@ module.exports = {
       },
     ],
   }),
+
+  markdown: {
+    links: {
+      externalAttrs: {
+        target: '_self',             // Open links in the current tab by default.
+        rel: 'noopener noreferrer',  // Guard against XSS.
+      },
+    },
+  },
 
   plugins: [
     {
