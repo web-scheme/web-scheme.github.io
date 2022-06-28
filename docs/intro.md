@@ -105,12 +105,12 @@ between the AST structure and the source code itself:
 - Each AST leaf maps to an atom, like the variable `x` or the string `"Under!"`.
 - Each subtree has either a function call or *syntax*
   (either built-in e.g. `define`, `if`, `begin`; or macros).
-  at the root.[^1]
+  at the root.
 
 The distinction between function and syntax is unimportant here
 because both are written as [*s-expressions*].
-The `car` is the parent node,
-and the `cdr` is the list of children (each of which could also be a subtree).
+The `car` is the parent node in the AST,
+and the `cdr` is the list of child nodes (each of which could also be a subtree).
 Whereas the spaghetti stack tree interpretation had children pointing to their parent,
 this interpretation has parents pointing to their (list of) children.
 Lisp source code is essentially *already* in syntax tree form when you write it!
@@ -126,13 +126,6 @@ the property that data and code share a representation,
 but often that representation is better thought of in terms of trees than lists.
 
 *List Processor* oversimplifies.
-
-[^1]: While true that there is no syntactic difference
-      between invoking a function and using syntax,
-      syntax expansion only happens at compile-time,
-      and due to Scheme's lexical scoping,
-      this means all references are easily differentiated
-      by the parser.
 
 [abstract syntax tree]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
 [*s-expressions*]: https://en.wikipedia.org/wiki/S-expression
