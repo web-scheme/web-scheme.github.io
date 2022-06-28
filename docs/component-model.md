@@ -10,7 +10,7 @@ and thus allowing WebScheme to interoperate with the rest of the Wasm ecosystem 
 will require extensions to the way Scheme libraries are defined.
 In this case only, the benefit is seen to far outweigh the consequences of deviation.
 
-[^1]: <a href="http://scheme-reports.org/2009/position-statement.html" target="_blank">position statement <ExternalLinkIcon /></a> 2009-08-20
+[^1]: See their 2009-08-20 <a href="http://scheme-reports.org/2009/position-statement.html" target="_blank">position statement <ExternalLinkIcon /></a>.
 
 [component model]: https://github.com/WebAssembly/component-model
 
