@@ -12,14 +12,6 @@ Or the entire compiler could run "serverless",
 serving binary responses to Scheme-coded requests,
 Or, everything could just be compiled to native, etc.
 
-In Wasm world, app stores are just CDNs,
-from which software can be "installed" primarily into web caches,
-everything sandboxed and performant,
-and sophisticated FFI means a single ecosystem for universal libraries.
-Scheme's knack for symbolic manipulation
-and fluid line between data and code
-fit into this world better than many would have hoped.
-
 ## Intro to Lisp
 
 If you don't know anything about Lisp,
