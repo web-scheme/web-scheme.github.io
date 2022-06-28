@@ -1,9 +1,10 @@
 {
   "devDependencies": {
+    "markdown-it-footnote": "^3.0.3",
     "vuepress": "^2.0.0-beta.48"
   },
   "scripts": {
-      "docs:dev": "vuepress dev docs",
-      "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   }
 }

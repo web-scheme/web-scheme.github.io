@@ -1,7 +1,7 @@
 # Component Model
 
 The Scheme Steering Committee once called Scheme
-*the world's most unportable programming language* [¹].
+*the world's most unportable programming language* [^1].
 This implementation tries to deviate from the report as little as possible,
 however Wasm's [component model] presents a conundrum:
 Scheme is an untyped language,
@@ -10,7 +10,8 @@ and thus allowing WebScheme to interoperate with the rest of the Wasm ecosystem 
 will require extensions to the way Scheme libraries are defined.
 In this case only, the benefit is seen to far outweigh the consequences of deviation.
 
-[¹]: http://scheme-reports.org/2009/position-statement.html
+[^1]: <a href="http://scheme-reports.org/2009/position-statement.html" target="_blank">position statement <ExternalLinkIcon /></a> 2009-08-20
+
 [component model]: https://github.com/WebAssembly/component-model
 
 ## Interface Type Annotations

@@ -103,8 +103,9 @@ Notice how there's a simple mapping
 between the AST structure and the source code itself:
 
 - Each AST leaf maps to an atom, like the variable `x` or the string `"Under!"`.
-- Each subtree has either a function call or *syntax* (like `define`, `if`, or `begin`)
-  at the root.
+- Each subtree has either a function call or *syntax*
+  (either built-in e.g. `define`, `if`, `begin`; or macros).
+  at the root.[^1]
 
 The distinction between function and syntax is unimportant here
 because both are written as [*s-expressions*].
@@ -125,6 +126,13 @@ the property that data and code share a representation,
 but often that representation is better thought of in terms of trees than lists.
 
 *List Processor* oversimplifies.
+
+[^1]: While true that there is no syntactic difference
+      between invoking a function and using syntax,
+      syntax expansion only happens at compile-time,
+      and due to Scheme's lexical scoping,
+      this means all references are easily differentiated
+      by the parser.
 
 [abstract syntax tree]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
 [*s-expressions*]: https://en.wikipedia.org/wiki/S-expression
