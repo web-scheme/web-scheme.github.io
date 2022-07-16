@@ -1,7 +1,7 @@
 // Use the same color as the logo for the primary.
 $primary: #739366;
 
-:root, html.dark {
+@mixin common {
   --c-brand: #{$primary};
   --c-brand-light: #{scale-color($primary, $lightness: 15%)};  // on hover
 
@@ -10,6 +10,7 @@ $primary: #739366;
 }
 
 :root {
+  @include common;
   // Use a slightly yellower background.
   $off-white: #f5f0eb;
   --c-bg: #{$off-white};
@@ -22,6 +23,7 @@ $primary: #739366;
 }
 
 html.dark {
+  @include common;
   // Use an even darker background in dark mode.
   $off-black: #080908;
   --c-bg: #{$off-black};

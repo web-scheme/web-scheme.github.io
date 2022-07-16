@@ -1,8 +1,16 @@
-const { defaultTheme } = require('@vuepress/theme-default')
+const { defaultTheme } = require('@vuepress/theme-default');
+const markdownItFootnote = require('markdown-it-footnote');
 
 module.exports = {
   title: 'WebScheme',
   description: 'R⁷RS Scheme for WebAssembly',
+  head: [
+    ['script', {
+       defer: true,  // TODO: See if there's a better syntax for boolean attributes.
+       src: 'https://static.cloudflareinsights.com/beacon.min.js',
+       'data-cf-beacon': '{\\"token\\": \\"10e50002c4164673b356d1be97900968\\"}',
+    }],
+  ],
 
   theme: defaultTheme({
     logo: '/logo.svg',
@@ -46,8 +54,11 @@ module.exports = {
           }
         }
       },
+    },
+    {
+      name: 'markdown-footnotes',
       extendsMarkdown: (md) => {
-        md.use(require('markdown-it-footnote'));
+        md.use(markdownItFootnote);
       },
     },
   ],
