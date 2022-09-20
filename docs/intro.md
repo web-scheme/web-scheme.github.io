@@ -24,7 +24,7 @@ Yes, this is Scheme, not Common Lisp.
 The rest of this "intro" assumes you already know
 the basics of Lisp.
 
-[wizard book]: https://mitpress.mit.edu/sites/default/files/sicp/index.html
+[wizard book]: https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html
 [language report]: /r7rs-small.pdf
 
 ### It's not about lists
