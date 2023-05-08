@@ -14,7 +14,7 @@ module.exports = {
 
   theme: defaultTheme({
     logo: '/logo.svg',
-    repo: 'https://github.com/web-scheme/s-lang',
+    repo: 'https://github.com/web-scheme/wsc',
     docsDir: 'docs',
     contributors: false,
     editLink: false,
@@ -47,10 +47,10 @@ module.exports = {
       extendsPage: (page) => {
         if (!page.frontmatter?.permalink) {
           const { path } = page;
-          if (path.endsWith('.html')) {
-            page.path = path.slice(0, -5);
-          } else if (path.endsWith('/')) {
+          if (path.endsWith('/')) {
             page.path = path.slice(0, -1);
+          } else if (path.endsWith('.html')) {
+            page.path = path.slice(0, -5);
           }
         }
       },
