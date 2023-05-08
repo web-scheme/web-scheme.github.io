@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-25790347","path":"/core-modules.html","title":"Core Modules","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Type ABI","slug":"type-abi","children":[{"level":3,"title":"Record Types","slug":"record-types","children":[]}]}],"git":{},"filePathRelative":"core-modules.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3cb0d299","path":"/component-model.html","title":"Component Model","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Interface Type Annotations","slug":"interface-type-annotations","children":[]}],"git":{},"filePathRelative":"component-model.md"}');export{e as data};
